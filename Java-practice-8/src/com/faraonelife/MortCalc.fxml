@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.faraonelife.MortCalc"
+          alignment="CENTER"
+          hgap="10"
+          vgap="10">
+    <rowConstraints>
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="20" />
+    </rowConstraints>
+    <columnConstraints>
+        <ColumnConstraints  percentWidth="40"/>
+        <ColumnConstraints percentWidth="50"/>
+    </columnConstraints>
+    <padding>
+        <Insets top="10" bottom="10" right="10" left="10" ></Insets>
+    </padding>
+    <Label text="Credit Amount" GridPane.columnIndex="0" GridPane.rowIndex="0"></Label>
+    <TextField  fx:id="txtCredit" GridPane.columnIndex="1" GridPane.rowIndex="0"></TextField>
+
+    <Label text="Down Payment" GridPane.columnIndex="0" GridPane.rowIndex="1"></Label>
+    <TextField  fx:id="txtPayment" GridPane.columnIndex="1" GridPane.rowIndex="1"></TextField>
+
+    <Label text="Interest Rate" GridPane.columnIndex="0" GridPane.rowIndex="2"></Label>
+    <Slider fx:id="Rate" max="100" min="0" majorTickUnit="1" GridPane.columnIndex="1" GridPane.rowIndex="2"  showTickLabels="true" showTickMarks="true"></Slider>
+
+    <Label text="Duration" GridPane.columnIndex="0" GridPane.rowIndex="3"></Label>
+    <Slider fx:id="slrDuration" min="10" max="30"  majorTickUnit="1" GridPane.columnIndex="1" GridPane.rowIndex="3" showTickLabels="true" showTickMarks="true"></Slider>
+
+    <Label text="Monthly Payment" GridPane.columnIndex="0" GridPane.rowIndex="4"></Label>
+    <Label fx:id="lblMnth" text="" GridPane.columnIndex="1" GridPane.rowIndex="4"></Label>
+
+    <Button  text="Operate"  onAction="#onOperate" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2"></Button>
+
+</GridPane>

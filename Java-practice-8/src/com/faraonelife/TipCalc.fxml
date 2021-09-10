@@ -1,0 +1,117 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Slider?>
+
+<GridPane fx:controller="com.faraonelife.TipController"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="TOP_CENTER"
+          hgap="10"
+          vgap="10">
+    <padding>
+        <Insets right="10" left="10" top="10" bottom="10"></Insets>
+    </padding>
+
+    <Label text="Party Size"
+           GridPane.rowIndex="0"
+           GridPane.columnIndex="0"
+           GridPane.halignment="RIGHT"
+    ></Label>
+    <TextField
+            fx:id="txtNumPeople"
+            GridPane.rowIndex="0"
+            GridPane.columnIndex="1"
+            GridPane.hgrow="ALWAYS"
+            GridPane.halignment="LEFT"
+
+    ></TextField>
+    <Label fx:id="lblPercentage"
+           GridPane.rowIndex="1"
+           GridPane.columnIndex="0"
+           GridPane.halignment="RIGHT"
+    ></Label>
+    <Slider
+            fx:id="slrPercentage"
+            GridPane.rowIndex="1"
+            GridPane.columnIndex="1"
+            GridPane.hgrow="ALWAYS"
+            GridPane.halignment="LEFT"
+            value="10"
+            max="50"
+            min="0"
+            majorTickUnit="10"
+            minorTickCount="5"
+            showTickMarks="true"
+            showTickLabels="true"
+    ></Slider>
+
+    <Label text="Tip"
+           GridPane.rowIndex="2"
+           GridPane.columnIndex="0"
+           GridPane.halignment="RIGHT"
+    ></Label>
+    <TextField
+            fx:id="txtTip"
+            GridPane.rowIndex="2"
+            GridPane.columnIndex="1"
+            GridPane.hgrow="ALWAYS"
+            GridPane.halignment="LEFT"
+            editable="false"
+    ></TextField>
+
+    <Label text="Total"
+           GridPane.rowIndex="3"
+           GridPane.columnIndex="0"
+           GridPane.halignment="RIGHT"
+    ></Label>
+    <TextField
+            fx:id="txtTotal"
+            GridPane.rowIndex="3"
+            GridPane.columnIndex="1"
+            GridPane.hgrow="ALWAYS"
+            GridPane.halignment="LEFT"
+            editable="false"
+    ></TextField>
+
+    <Label text="Amount"
+           GridPane.halignment="RIGHT"
+           GridPane.rowIndex="4"
+           GridPane.columnIndex="0"
+    ></Label>
+    <TextField
+            fx:id="txtAmount"
+            GridPane.rowIndex="4"
+            GridPane.columnIndex="1"
+            GridPane.hgrow="ALWAYS"
+            GridPane.halignment="LEFT"
+    ></TextField>
+
+
+
+    <Label text="Each One Pays"
+           GridPane.rowIndex="5"
+           GridPane.columnIndex="0"
+           GridPane.halignment="RIGHT"
+    ></Label>
+    <TextField
+            fx:id="txtEachPays"
+            GridPane.rowIndex="5"
+            GridPane.columnIndex="1"
+            GridPane.hgrow="ALWAYS"
+            GridPane.halignment="LEFT"
+            editable="false"
+    ></TextField>
+
+    <Button
+            onAction="#handleCalculateTip"
+            text="Calculate"
+            GridPane.rowIndex="6"
+            GridPane.columnIndex="1"
+            GridPane.hgrow="ALWAYS"
+            GridPane.halignment="CENTER"
+    ></Button>
+
+</GridPane>

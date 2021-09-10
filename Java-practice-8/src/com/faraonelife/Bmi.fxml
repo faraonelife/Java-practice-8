@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.faraonelife.Mass"
+          alignment="CENTER"
+          hgap="10"
+          vgap="10">
+
+
+    <Label text="Weight" GridPane.columnIndex="0" GridPane.rowIndex="0"></Label>
+    <TextField fx:id="txtWeight" GridPane.columnIndex="1" GridPane.rowIndex="0"></TextField>
+
+    <Label text="Height" GridPane.columnIndex="0" GridPane.rowIndex="1"></Label>
+    <TextField  fx:id="txtHeight" GridPane.columnIndex="1" GridPane.rowIndex="1"></TextField>
+
+    <Label text=" Your body mass index" GridPane.columnIndex="0" GridPane.rowIndex="2"></Label>
+    <Label fx:id="index" text="" GridPane.columnIndex="1" GridPane.rowIndex="2"></Label>
+
+    <Button text="Calculate" onAction="#onMass" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2"></Button>
+
+    <Label text="BMI VALUES " GridPane.columnIndex="0" GridPane.rowIndex="4"></Label>
+    <Label text="Underweight: less than 18.5" GridPane.columnIndex="0" GridPane.rowIndex="5"></Label>
+    <Label text="Normal: between 18.5 and 24.9" GridPane.columnIndex="0" GridPane.rowIndex="6"></Label>
+    <Label text="Overweight: between 25 and 29.9" GridPane.columnIndex="0" GridPane.rowIndex="7"></Label>
+    <Label text="Obese: 30 or greater" GridPane.columnIndex="0" GridPane.rowIndex="8"></Label>
+
+
+</GridPane>

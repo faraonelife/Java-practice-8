@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.faraonelife.ToDoDialogCont"
+            prefHeight="400.0" prefWidth="600.0">
+<headerText>Enter details of your new task </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Short Description" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="txtShortDescription" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+            <Label text="Details" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextArea fx:id="txtDetails" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Label text="Deadline" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <DatePicker fx:id="calDeadline" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        </GridPane>
+    </content>
+</DialogPane>
